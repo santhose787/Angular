@@ -1,0 +1,11 @@
+ <!-- <label>Ingredients</label>  
+<input type="text" [(ngModel)]="ingredients" value="Ingredients" (input)="storeData()" class="form-cotrols">-->
+
+<select name="ingredients" (change)="save($event)" class="form-control" > 
+    <option value="maaza">Maaza</option>
+    <option value="kitkat">kitkat</option>
+    <option value="icecream">icecream</option>
+    <option value="diarymilk">diarymilk</option>
+    <option value="cocacola">cocacola</option>
+</select>
+

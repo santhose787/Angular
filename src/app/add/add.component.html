@@ -1,0 +1,72 @@
+<div class="container"> 
+    <h1>Student Details</h1>
+    <div>
+      <label>Name</label>
+      <input type="text" name="name" [(ngModel)]="name" class="form-control">
+    </div>
+    <div>
+      <label>Mark 1</label>
+      <input type="text" name="mark1" [(ngModel)]="mark1" class="form-control">
+    </div>
+    <div>
+      <label>Mark 2</label>
+      <input type="text" name="mark2" [(ngModel)]="mark2" class="form-control">
+    </div>
+    <div>
+      <label>Mark 3</label>
+      <input type="text" name="mark3" [(ngModel)]="mark3" class="form-control">
+    </div>
+    <div>
+      <label>Mark 4</label>
+      <input type="text" name="mark4" [(ngModel)]="mark4" class="form-control">
+    </div>
+    <div>
+      <label>Mark 5</label>
+      <input type="text" name="mark5" [(ngModel)]="mark5" class="form-control">
+    </div>
+  
+    <div>
+      <label>Total</label>
+      <input type="text" name="total" value="{{total}}" class="form-control">
+    </div>
+    <div>
+      <label>Result</label>
+      <input type="text" name="result" value="{{result}}" class="form-control">
+    </div>
+    <div><button class="btn btn-success" (click)="stuTotal()">ADD</button>
+      <button class="btn btn-danger" (click)="next()">Next</button>
+    </div>
+  </div>
+   <app-search
+   (searchName)="search($event)"
+   ></app-search>
+  <button class="btn btn-info" (click)="san()">ADDITION</button>
+  <div *ngIf="karthi">
+    <ul *ngIf="san">
+        <li>Name:{{ san.Name }}</li>
+        <li>Tamil:{{ san.Tamil }}</li>
+        <li>English:{{ san.English }}</li>
+        <li>Maths:{{ san.Maths }}</li>
+        <li>Science:{{ san.Science }}</li>
+        <li>Social:{{ san.Social }}</li>
+        <li>Total={{ san.Total }}</li>
+        <li>Average={{ san.Result }}</li>
+        <h1>Result:{{san.Total >=175 ? 'pass' : 'Fail'}}</h1>
+    </ul>
+</div>
+
+
+<!-- <button class="btn btn-success" (click)="san2()">ADDITION1</button> -->
+<!-- <h1>{{result5}}</h1> -->
+
+ testing 
+<div>
+  <label for="number1">Number 1:</label>
+  <input type="number" id="number1" [(ngModel)]="number1">
+</div>
+<div>
+  <label for="number2">Number 2:</label>
+  <input type="number" id="number2" [(ngModel)]="number2">
+</div>
+<button (click)="calculateSum()">Calculate Sum</button>
+<p *ngIf="result1 !== 0">Sum: {{ result1 }}</p>

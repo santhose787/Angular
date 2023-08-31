@@ -1,0 +1,8 @@
+<!-- Simple INcrease Value -->
+ <h1>Parent Component</h1> 
+<h3>{{counter}}</h3>
+<app-child (increaseValue)="counters($event)"></app-child>
+
+<!-- TestServer -->
+<app-child (server1Created)="onServer($event)"></app-child>
+<app-search *ngFor="let item of servers" [item]="item"></app-search>

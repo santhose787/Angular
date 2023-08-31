@@ -1,0 +1,40 @@
+
+<!-- <table class="table-responsive">  
+    <thead>
+      <tr>
+        <th scope="col">s.no</th>
+        <th scope="col">Car Name</th>
+         <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+       
+        <td> {{item.id}}</td>
+        <td> {{item.name}}</td>
+        <td> {{item.price}}</td>
+      </tr>
+    </tbody>
+</table>
+<button  class="btn btn-success" (click)="emi()">EMI</button><div *ngIf="a">
+<div *ngFor="let item of items"><ul  *ngIf="item.price>=100000"><li>{{item.name}}</li></ul></div></div>
+<button  class="btn btn-success" (click)="noEmi()">No EMI</button>
+<div *ngIf="b">
+    <div *ngFor="let item of items"><ul  *ngIf="item.price<=100000">{{item.name}}</ul></div></div>-->
+
+    <input type="text" [(ngModel)]="carService.input1">
+    <button class=" btn btn-success" (click)="carService.store()">click me</button>
+    <button class=" btn btn-danger" (click)="carService.store1()">Delete me</button>
+    <p *ngFor="let item of carService.get2">{{item}}</p>
+    <!-- <p *ngIf="carService.get2.length>5">{{carService.get2}}</p> -->
+    <ul *ngIf="carService.a">
+      <li>{{carService.get2}}</li>
+    </ul>
+
+    <button class=" btn btn-danger" (click)="carService.store2()">use me</button>
+    <div *ngIf="carService.b"><ul *ngFor="let items of carService.get3">
+      <li>Employee.Name:{{items.name}}</li>
+      <li>Company.Name:{{items.cmpname}}</li>
+      <li>Salary:{{items.salary}}</li>
+    </ul></div>
+    

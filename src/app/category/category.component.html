@@ -1,0 +1,11 @@
+<input  #inputRef type="text" (keyup)="0" class="form-control">
+<h1>{{inputRef.value}}</h1>
+<input type="text" [(ngModel)]="karthi" (ngModelChange)="sandy($event)"><h3>{{a}}</h3>
+<app-add-category (addCategory)="onAdd($event)" #AddCategory></app-add-category>
+<h2>Number={{AddCategory.a}}</h2>
+
+<app-single-category *ngFor="let categories of category"
+ [category]="categories" (categoryAdded)="showCategory($event)" 
+></app-single-category>
+
+<app-view-category *ngIf="addCategory" [category]="addCategory"></app-view-category>

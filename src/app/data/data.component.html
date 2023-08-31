@@ -1,0 +1,33 @@
+
+<app-search-bar (ingredientsList)="searchedData($event)" ></app-search-bar>
+
+<label >Quantity</label>
+<input type="text" [(ngModel)]="recieveData">
+<button class="btn btn-success" (click)="addData()">Add</button>
+<div  >
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Ingredients</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let datas1 of arr;let i=index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{datas1.name}}</td>
+            <td>{{datas1.price}}</td>
+            <td>{{datas1.quantity}}</td>
+            <td >{{datas1.total}}</td>
+           
+          </tr>
+          
+        </tbody>
+      </table>
+      <h3>Total={{sumValues()}}</h3>
+</div>
+<!-- <div *ngFor="let san of grocery">
+<app-child [arr]="san"></app-child></div> -->

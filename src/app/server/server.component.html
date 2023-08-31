@@ -1,0 +1,18 @@
+<!-- <p 
+  [ngStyle]="{backgroundColor: getColor()}"
+  [ngClass]="{online: serverStatus === 'online'}">
+  {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}
+</p>-->
+
+<div *ngFor="let item of car.users">
+  <p>{{item.id}} {{item.name}}</p>
+  
+</div>
+<!-- <p>{{car.getUsers()}}</p> -->
+<!-- <p>{{car.updateUser(4,'santhosh')}}</p> -->
+
+<p>{{car.getUserById(2)}}</p>
+<h1>{{special}}</h1>
+
+<!-- Sankari akka -->
+

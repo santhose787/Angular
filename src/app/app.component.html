@@ -1,0 +1,64 @@
+
+    <!-- <app-server [special]="items1"></app-server> -->
+    <!-- <app-header></app-header> 
+    <app-data></app-data> -->
+
+    <!-- <app-category></app-category> -->
+   <!-- <app-viewchild > 
+    <h1 #head class="h1">ECE</h1>
+    <h5 class="h5">Santhosh</h5>
+    <p class="p">KLN College of engineering</p>
+   </app-viewchild> -->
+   <!-- <app-viewchild >
+    <h1 class="h1">Mech</h1>
+    <h5 class="h5">DuraiRaj</h5>
+    <p class="p">KLN College of engineering</p>
+   </app-viewchild>
+   <app-viewchild >
+    <h1 class="h1">ECE</h1>
+    <h5 class="h5">Harish</h5>
+    <p class="p">KLN College of engineering</p>
+   </app-viewchild>
+   <app-child></app-child>-->
+   
+   <!-- <button class="btn btn-success" (click)="increase()">Increase</button> 
+   <button class="btn btn-success" (click)="decrease()">Decrease</button>
+   <app-stopwatch></app-stopwatch>
+<button (click)="start()">Start</button>
+<button (click)="stop()">Stop</button>
+<button (click)="Reset()">Reset</button>-->
+  
+<!-- <input type="text" #inputs class="form-control" (input)="santa()"> 
+<app-lifecycle [inputs]="inputss"></app-lifecycle>-->
+<!-- Single Input Box Using Ngmodel -->
+<!-- <input [(ngModel)]="data" placeholder="Enter data">
+<button (click)="toggleStorage()" class="btn btn-success">Toggle</button><br><br> -->
+<!-- Three input Boxes using ngModel -->
+<!-- <input [(ngModel)]="userName"> 
+<input [(ngModel)]="userName1">
+<input [(ngModel)]="userName2">
+<button (click)="saveName()" class="btn btn-info">Save</button><br><br>-->
+<!-- Three input Boxes Using Template referenece Variable -->
+<!-- <input #inputField placeholder="Enter your name" > 
+<input #inputField placeholder="Enter your name" >
+<input #inputField placeholder="Enter your name" >
+<button (click)="saveNames()" class="btn btn-danger">Saves</button>-->
+
+<!-- <li *ngFor="let a of storedArrays"> 
+    <ul appCustom>{{a}}</ul>
+</li>-->
+<!-- <app-search></app-search> -->
+
+<!-- <app-lifecycle names="santhosh"></app-lifecycle> -->
+<h1 appCustom>It is A Uniq Technologies</h1>
+<li
+class="list-group-item"
+[ngClass]="{odd: odd % 2 !== 0}"
+[ngStyle]="{backgroundColor: odd % 2 !== 0 ? 'yellow' : 'transparent'}"
+*ngFor="let odd of oddNumbers">
+{{ odd }}
+</li>
+
+
+
+ 

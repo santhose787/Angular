@@ -1,0 +1,17 @@
+<!-- Adding THe Marks -->
+<!-- <div>  
+     <label>Search</label>
+    <input type="text" name="mark5" [(ngModel)]="searchTerm" (input)="onSearch()" class="form-control">
+  </div> -->
+
+
+  <!-- <h1>{{item.Servers1}}</h1> 
+  <h1>{{item.Servers2}}</h1>-->
+  
+  <div>
+    <h2>Data Component</h2>
+    <button (click)="addData()">Add Data</button>
+    <ul>
+      <li *ngFor="let item of datas">{{ item }}</li>
+    </ul>
+  </div>
